@@ -1,9 +1,9 @@
-h1 {color: #000000; font-family: Verdana; text-align: center;}
+h1 {color: #000000; font-family: Verdana; text-align: center; font-size: 60px;}
 body {background-color: darkgray}
-h2 {color: #05650A; font-family: Georgia; text-align: center;}
-h3 {color: #ED5209; font-family: Arial; text-align: left; padding-left: 50px;}
+h2 {color: #181717; font-family: Verdana; text-align: center; text-decoration: underline; font-size:40px}
+h3 {color: #ED5209; font-family: Arial; text-align: left; padding-left: 40px; }
 a {color: blue; font-family: Arial; text-align: left; padding-left: 50px;}
-p {font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; font-size: 20px;}
+p {font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; font-size: 20px; text-align: center;}
 ul {
   list-style-type: none;
   margin: 0;
@@ -14,6 +14,8 @@ ul {
 
 li {
   float: left;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 li a, .dropbtn {
@@ -75,4 +77,17 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 50px;
+}
+.card {
+  background-color: lightgray;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
