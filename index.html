@@ -5,6 +5,7 @@
 </head>
 <body style="background-color:#838181">
 <h1>Digital Portfolio</h1>
+<div class="navbar">
 <ul>
   <li><a href="icovb.github.io">Home</a></li>
   <li><a href="gallery.html">Gallery</a></li>
@@ -16,21 +17,49 @@
       <a href="TANKS!/index.html">Tanks</a>
     </div>
   </li>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search..." name="search">
+      <button type="submit"><i class="fa fa-search"><img src="search.png" style="width:15px; height:15px;"></i></button>
+    </form>
+  </div>
 </ul>
+</div>
+
 <div class="card">
+
 <h2>Roll a Ball</h2>
 <img src="Screenshots/RAB.png" style="width:1000px; height=500px;" class="center">
 <p>Roll a ball around a stage and collect all the spinning cubes to proceed.</p>
 	</div>
+
 <div class="card">
+
 <h2>Endless Runner</h2>
 <img src="Screenshots/EndlessRunner.png" style="width:1000px; height=500px;" class="center">
 <p>Jump across pits and hit boosters to live for as long as you can.</p>
 	</div>
+
 <div class="card">
+
 <h2>Tanks!</h2>
 <img src="Screenshots/Tanks.png" style="width:1000px; height=500px;" class="center">
 <p>Play with a friend in a compeitive 2-player tank shooter, first to 5 kills wins the game.</p>
+
 	</div>
+	<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>
