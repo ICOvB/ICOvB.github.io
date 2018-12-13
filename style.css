@@ -91,20 +91,20 @@ div.desc {
   margin-left: 100px;
   margin-right: 100px;
 }
-.navbar {
+#navbar {
 	overflow:hidden;
 	background-color: lightgray;
 }
-.navbar .search-container {
+#navbar .search-container {
   float: right;
 }
-.navbar input[type=text] {
+#navbar input[type=text] {
   padding: 6px;
   margin-top: 8px;
   font-size: 17px;
   border: none;
 }
-.navbar .search-container button {
+#navbar .search-container button {
   float: right;
   padding: 6px 10px;
   margin-top: 8px;
@@ -138,7 +138,7 @@ div.desc {
   top: 0;
   width: 100%;
 }
-.sticky + .card {
+.sticky + .content + .card {
   padding-top: 60px;
 }
 .content {
