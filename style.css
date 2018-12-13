@@ -91,6 +91,10 @@ div.desc {
   margin-left: 100px;
   margin-right: 100px;
 }
+.card img {
+	width: 100% !important;
+}
+
 #navbar {
 	overflow:hidden;
 	background-color: lightgray;
@@ -137,6 +141,7 @@ div.desc {
   position: fixed;
   top: 0;
   width: 100%;
+	overflow: initial !important;
 }
 .sticky + .content + .card {
   padding-top: 60px;
