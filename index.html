@@ -1,7 +1,75 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:#838181">
+<h1>Digital Portfolio</h1>
+<div id="navbar">
+<ul>
+  <li><a href="icovb.github.io">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Projects</a>
+    <div class="dropdown-content">
+      <a href="RAB/index.html">Roll a Ball</a>
+      <a href="ENDRUN/index.html">Endless Runner</a>
+      <a href="TANKS!/index.html">Tanks</a>
+      <a href="SurvivalShooter/index.html">Survival Shooter</a>
+    </div>
+  </li>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search..." name="search">
+      <button type="submit"><i class="fa fa-search"><img src="search.png" style="width:15px; height:15px;"></i></button>
+    </form>
+  </div>
+</ul>
+</div>
+<div class="content">
+<div class="card">
+
+<h2>Roll a Ball</h2>
+<img src="Screenshots/RAB.png" style="width:1000px; height=500px;" class="center">
+<p>Roll a ball around a stage and collect all the spinning cubes to proceed.</p>
+	</div>
+
+<div class="card">
+
+<h2>Endless Runner</h2>
+<img src="Screenshots/EndlessRunner.png" style="width:1000px; height=500px;" class="center">
+<p>Jump across pits and hit boosters to live for as long as you can.</p>
+	</div>
+
+<div class="card">
+
+<h2>Tanks!</h2>
+<img src="Screenshots/Tanks.png" style="width:1000px; height=500px;" class="center">
+<p>Play with a friend in a competitive 2-player tank shooter, first to 5 kills wins the game.</p>
+
+	</div>
+	<div class="card">
+
+<h2>Survival Shooter</h2>
+<img src="Screenshots/SurvivalShooter.png" style="width:1000px; height=500px;" class="center">
+<p>Stay alive as long as you can while fighting off monsters from your own imagination.</p>
+
+	</div>
+	</div>
+	<script>
+		
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>
